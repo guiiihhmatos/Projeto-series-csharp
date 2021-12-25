@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z71NOboimeXmsd11xuJ6zZUW/yz/xzFiLHNby/DjvmKO5uXx3tkLMmuRdk1G0EvdY3OFLwd5CG4EUzy/GlvteQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guisa\\Documents\\Projeto DecolaTech\\Series\\Series.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guisa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
