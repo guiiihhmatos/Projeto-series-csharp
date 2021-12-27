@@ -1,5 +1,4 @@
 using System;
-using Series.Classes;
 using Series.Enum;
 
 namespace Series.Classes
