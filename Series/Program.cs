@@ -68,6 +68,29 @@ namespace Series
             Console.WriteLine();
             return opcao;
         }
+        private static int ObterGenero()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Gêneros Disponíveis : ");
+            Console.WriteLine("1 - Ação");
+            Console.WriteLine("2 - Aventura");
+            Console.WriteLine("3 - Comédia");
+            Console.WriteLine("4 - Documentario");
+            Console.WriteLine("5 - Drama");
+            Console.WriteLine("6 - Espionagem");
+            Console.WriteLine("7 - Faroeste");
+            Console.WriteLine("8 - Fantasia");
+            Console.WriteLine("9 - Ficção Científica");
+            Console.WriteLine("10 - Musical");
+            Console.WriteLine("11 - Romance");
+            Console.WriteLine("12 - Suspense");
+            Console.WriteLine("13 - Terro");
+            Console.WriteLine();
+            Console.Write("Digite o número do gênero : ");
+
+            int entradaGenero = int.Parse(Console.ReadLine());
+            return entradaGenero;
+        }
         private static void ListarSerie()
         {
             Console.WriteLine("Lista das Séries");
@@ -92,25 +115,9 @@ namespace Series
         {
         VOLTAR:
             Console.WriteLine("Inserir alguma Série");
-            Console.WriteLine();
-            Console.WriteLine("Gêneros Disponíveis : ");
-            Console.WriteLine("1 - Ação");
-            Console.WriteLine("2 - Aventura");
-            Console.WriteLine("3 - Comédia");
-            Console.WriteLine("4 - Documentario");
-            Console.WriteLine("5 - Drama");
-            Console.WriteLine("6 - Espionagem");
-            Console.WriteLine("7 - Faroeste");
-            Console.WriteLine("8 - Fantasia");
-            Console.WriteLine("9 - Ficção Científica");
-            Console.WriteLine("10 - Musical");
-            Console.WriteLine("11 - Romance");
-            Console.WriteLine("12 - Suspense");
-            Console.WriteLine("13 - Terro");
-            Console.WriteLine();
-            Console.Write("Digite o número do gênero : ");
 
-            int entradaGenero = int.Parse(Console.ReadLine());
+            int entradaGenero = ObterGenero();
+
             if ((entradaGenero > 0) && (entradaGenero <= 13))
             {
                 Console.WriteLine();
@@ -187,25 +194,8 @@ namespace Series
             if (verificador != null)
             {
             VOLTAR:
-                Console.WriteLine();
-                Console.WriteLine("Gêneros Disponíveis : ");
-                Console.WriteLine("1 - Ação");
-                Console.WriteLine("2 - Aventura");
-                Console.WriteLine("3 - Comédia");
-                Console.WriteLine("4 - Documentario");
-                Console.WriteLine("5 - Drama");
-                Console.WriteLine("6 - Espionagem");
-                Console.WriteLine("7 - Faroeste");
-                Console.WriteLine("8 - Fantasia");
-                Console.WriteLine("9 - Ficção Científica");
-                Console.WriteLine("10 - Musical");
-                Console.WriteLine("11 - Romance");
-                Console.WriteLine("12 - Suspense");
-                Console.WriteLine("13 - Terro");
-                Console.WriteLine();
-                Console.Write("Digite o número do gênero : ");
+                int entradaGenero = ObterGenero();
 
-                int entradaGenero = int.Parse(Console.ReadLine());
                 if ((entradaGenero > 0) && (entradaGenero <= 13))
                 {
                     Console.WriteLine();
@@ -343,4 +333,4 @@ namespace Series
 
         }
     }
-}
+} //parei aqui 346
