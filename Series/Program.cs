@@ -6,7 +6,6 @@ namespace Series
 {
     class Program
     {
-        static SerieRepositorio repositorio = new SerieRepositorio();
         static void Main(string[] args)
         {
             AcoesMain activade = new AcoesMain();
@@ -48,7 +47,7 @@ namespace Series
                 opcao = activade.ObterOpcaoUsuario();
             }
 
-            
+
         }
     }
 } 
